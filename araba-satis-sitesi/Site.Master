@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="araba_satis_sitesi.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>Emlak Satış Sitesi</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Emlak Sitesi</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="ListHomes.aspx">Ana Sayfa</a></li>
+                 <li class="active"><a href="ContactPage.aspx">İletişim</a></li>
+                
+                <li><a href="#">Page 2</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span>Kayıt Ol</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Giriş Yap</a></li>
+            </ul>
+        </div>
+    </nav>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <div class="container">
+        </div>
+    </asp:ContentPlaceHolder>
+
+
+</body>
+</html>
